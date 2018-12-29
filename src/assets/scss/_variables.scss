@@ -118,6 +118,17 @@ $border: 										1px solid $color-gray-light;
 $time-delay: 								0.05s;
 $time-duration: 						0.25s;
 
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-gutter-width:           20px !default;
+
+
+// font-awsome
+$fa-font-path: "~font-awesome/fonts";
+
+
 @function double($value) {
 	@return $value * 2
 };
