@@ -29,20 +29,16 @@ export default {
             title: 'NOSSO VEÍCULOS',
             items: [
               {
-                props: {
-                  title: 'ETIOS HATCH 2017',
-                  href: 'http://google.com',
-                  srcImg: 'http://localhost:8080/images/header/model_thumb_etiooooss.png',
-                  class: 'ItemMenuVeiculo--submenu'
-                },
+                title: 'ETIOS HATCH 2017',
+                href: 'http://google.com',
+                srcImg: 'http://localhost:8080/images/header/model_thumb_etiooooss.png',
+                class: 'ItemMenuVeiculo--submenu',
                 is: ItemMenuVeiculo
               },
               {
-                props: {
-                  title: 'ETIOS SEDÃ 2017',
-                  srcImg: 'http://localhost:8080/images/header/model_thumb_Comprar-Novo-Toyota-Etios-Sedan-X-1.5-Manual.png',
-                  class: 'ItemMenuVeiculo--submenu'
-                },
+                title: 'ETIOS SEDÃ 2017',
+                srcImg: 'http://localhost:8080/images/header/model_thumb_Comprar-Novo-Toyota-Etios-Sedan-X-1.5-Manual.png',
+                class: 'ItemMenuVeiculo--submenu',
                 is: ItemMenuVeiculo
               }
             ]

@@ -7,13 +7,13 @@
           :key="'item' + index"
           v-b-toggle="getIdAccordion(index)"
           :open="show[index]"
-          v-bind="item.props">
+          v-bind="item">
           {{ item.title }}
         </ItemMenuAccordion>
       </template>
       <template v-else>
         <ItemMenu
-          v-bind="item.props"
+          v-bind="item"
           :href="item.href"
           :key="'item' + index">
           {{ item.title }}
@@ -29,11 +29,11 @@
           <template v-if="itemSub.is">
             <component
               :is="itemSub.is"
-              v-bind="itemSub.props" />
+              v-bind="itemSub" />
           </template>
           <template v-else>
             <ItemMenu
-              v-bind="itemSub.props"
+              v-bind="itemSub"
               :href="itemSub.href"
               class="ItemMenu--submenu">
               {{ itemSub.title }}
