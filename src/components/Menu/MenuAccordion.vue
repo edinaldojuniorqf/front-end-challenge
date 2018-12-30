@@ -26,10 +26,10 @@
           :key="'itemSub' + index + indexSub"
           :accordion="'accordion_' + _uid"
           v-model="show[index]">
-          <template v-if="itemSub.is">
+          <template v-if="itemSub.comp">
             <component
-              :is="itemSub.is"
-              v-bind="itemSub" />
+              v-bind="itemSub"
+              :is="comps[itemSub.comp] || itemSub.comp" />
           </template>
           <template v-else>
             <ItemMenu
@@ -61,6 +61,13 @@ export default {
     items: {
       type: Array,
       required: true
+    },
+
+    comps: {
+      type: Object,
+      default () {
+        return {}
+      }
     }
   },
 

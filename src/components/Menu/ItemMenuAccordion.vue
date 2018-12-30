@@ -31,10 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-.ItemMenuAccordion {
-  
-}
-
 .ItemMenuAccordion__icon {
   transition: all .4s;
 }
