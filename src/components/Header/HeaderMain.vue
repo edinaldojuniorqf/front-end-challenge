@@ -10,7 +10,7 @@
 
 <script>
 import MenuToggleMain from '@/components/Menu/MenuToggleMain.container'
-import MenuToggleTelefone from '@/components/Menu/MenuToggleTelefone'
+import MenuToggleTelefone from '@/components/Menu/MenuToggleTelefone.container'
 import LogoGrandMotors from '@/components/Header/LogoGrandMotors'
 import LogoToyota from '@/components/Header/LogoToyota'
 
