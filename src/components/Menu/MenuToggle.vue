@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import BtnMenuToggle from './BtnMenuToggle'
+import BtnMenuToggle from '@/components/Btn/BtnMenuToggle'
 
 export default {
   name: 'MenuToggle',
