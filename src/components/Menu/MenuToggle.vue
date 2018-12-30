@@ -17,10 +17,27 @@ import BtnMenuToggle from '@/components/Btn/BtnMenuToggle'
 export default {
   name: 'MenuToggle',
 
+  props: {
+    value: {
+      type: Boolean,
+      default: false
+    }
+  },
+
+  watch: {
+    value (newValue) {
+      this.show = newValue
+    }
+  },
+
   data () {
     return {
       show: false
     }
+  },
+
+  created () {
+    this.show = this.value
   },
 
   components: {
@@ -30,6 +47,7 @@ export default {
   methods: {
     handleClick () {
       this.show = !this.show
+      this.$emit('input', this.show)
     }
   }
 }
