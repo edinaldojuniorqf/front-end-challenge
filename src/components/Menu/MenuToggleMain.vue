@@ -19,7 +19,9 @@ export default {
 
   data () {
     return {
-      ItemMenuVeiculo
+      comps: {
+        ItemMenuVeiculo
+      }
     }
   },
 
