@@ -1,55 +1,18 @@
 <template>
   <div class="HeaderMain">
     .
-    <MenuToggle>
-      <MenuAccordion :items="items" />
-    </MenuToggle>
+    <MenuToggleMain />
   </div>
 </template>
 
 <script>
-import MenuToggle from '@/components/Menu/MenuToggle'
-import MenuAccordion from '@/components/Menu/MenuAccordion'
-import ItemMenuVeiculo from '@/components/Menu/ItemMenuVeiculo'
+import MenuToggleMain from '@/components/Menu/MenuToggleMain.container'
 
 export default {
   name: 'HeaderMain',
 
   components: {
-    MenuToggle,
-    MenuAccordion
-  },
-
-  props: {
-    items: {
-      type: Array,
-      default () {
-        return [
-          {
-            title: 'NOSSO VEÍCULOS',
-            items: [
-              {
-                title: 'ETIOS HATCH 2017',
-                href: 'http://google.com',
-                srcImg: 'http://localhost:8080/images/header/model_thumb_etiooooss.png',
-                class: 'ItemMenuVeiculo--submenu',
-                is: ItemMenuVeiculo
-              },
-              {
-                title: 'ETIOS SEDÃ 2017',
-                srcImg: 'http://localhost:8080/images/header/model_thumb_Comprar-Novo-Toyota-Etios-Sedan-X-1.5-Manual.png',
-                class: 'ItemMenuVeiculo--submenu',
-                is: ItemMenuVeiculo
-              }
-            ]
-          },
-          {
-            title: 'SERVIÇOS',
-            href: 'http://google.com'
-          }
-        ]
-      }
-    }
+    MenuToggleMain
   }
 }
 </script>
