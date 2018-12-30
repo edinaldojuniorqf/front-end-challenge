@@ -1,5 +1,5 @@
 /* COLOR */
-$color-primary-base: 				#04669c;
+$color-primary-base: 				#b71d3e;
 $color-primary-dark: 				darken($color-primary-base, 12%);
 $color-primary-light: 			lighten($color-primary-base, 15%);
 
@@ -49,6 +49,7 @@ $color-telegram: 						#0088cc;
 $color-background-base: 		#2a2a2a;
 $color-background-dark: 		darken($color-background-base, 8%);
 $color-background-light: 		lighten($color-background-base, 15%);
+$color-background-submenu:  $color-primary-base;
 
 $color-font:								$color-white;
 
@@ -94,6 +95,8 @@ $padding-middle: 						25px;
 $padding-extra: 						30px;
 $padding-large: 						35px;
 $padding-big: 							40px;
+$padding-top-item-menu:			10px;
+$padding-left-item-menu:		20px;
 
 $margin-tiny:								5px;
 $margin-wee:								10px;
