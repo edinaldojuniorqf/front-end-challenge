@@ -1,10 +1,10 @@
 <template>
   <div class="HeaderMain">
-    <MenuToggleTelefone />
-    <MenuToggleMain />
-    <div class="w-100"></div>
-    <LogoGrandMotors />
-    <LogoToyota />
+    <MenuToggleTelefone class="HeaderMain__MenuToggleTelefone" />
+    <MenuToggleMain class="HeaderMain__MenuToggleMain d-lg-none" />
+    <div class="w-100 d-sm-none"></div>
+    <LogoGrandMotors class="HeaderMain__LogoGrandMotors" />
+    <LogoToyota class="HeaderMain__LogoToyota" />
   </div>
 </template>
 
@@ -34,5 +34,27 @@ export default {
   flex-wrap: wrap;
   padding: 20px 0;
   position: relative;
+}
+
+.HeaderMain__MenuToggleMain {
+  @include media-breakpoint-up(sm) {
+    order: -9;
+  }
+}
+
+.HeaderMain__LogoGrandMotors {
+  @include media-breakpoint-down(xs) {
+    margin-top: $margin-base;
+  }
+
+  @include media-breakpoint-up(sm) {
+    order: -10;
+  }
+}
+
+.HeaderMain__LogoToyota {
+  @include media-breakpoint-down(xs) {
+    margin-top: $margin-base;
+  }
 }
 </style>
