@@ -98,10 +98,4 @@ export default {
     position: relative;
   }
 }
-
-@include media-breakpoint-down(md) {
-  .MenuNav {
-    display: none !important;
-  }
-}
 </style>

@@ -2,7 +2,7 @@
   <div class="HeaderMain">
     <MenuToggleTelefone />
     <MenuToggleMain class="d-lg-none" />
-    <MenuNavMain />
+    <MenuNavMain class="d-none d-lg-block" />
     <div class="w-100 d-sm-none"></div>
     <LogoGrandMotors />
     <LogoToyota />
@@ -45,6 +45,11 @@ export default {
   }
 
   .MenuToggleMain {
+    
+    @include media-breakpoint-only(xs) {
+      margin-left: auto;
+    }
+
     @include media-breakpoint-up(sm) {
       order: -9;
     }
