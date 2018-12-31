@@ -60,9 +60,7 @@ export default {
     },
 
     handleMenuToggleClick (e) {
-      if (this.show) {
-        e.stopPropagation()
-      }
+      e.stopPropagation()
     }
   }
 }
