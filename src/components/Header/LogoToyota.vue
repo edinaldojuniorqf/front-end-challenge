@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="LogoToyta">
     <img :src="ImgLogo" alt="Toyota">
   </div>
 </template>
