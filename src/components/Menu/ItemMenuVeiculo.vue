@@ -1,5 +1,5 @@
 <template>
-  <ItemMenu class="ItemMenuVeiculo ItemMenu--submenu"
+  <ItemMenu class="ItemMenuVeiculo"
     :title="title"
     :href="href"
     @click="handleClick">

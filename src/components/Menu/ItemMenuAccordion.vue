@@ -8,6 +8,7 @@
     :class="{
       'ItemMenuAccordion__icon--open': open
     }" aria-hidden="true"></i>
+
   </ItemMenu>
 </template>
 

@@ -1,10 +1,11 @@
 <template>
   <div class="MenuToggle">
-    <slot name="btn">
-      <BtnMenuToggle
-        :active="show"
-        @click="handleClick" />
-    </slot>
+    <div @click="handleClick">
+      <slot name="btn">
+        <BtnMenuToggle
+          :active="show" />
+      </slot>
+    </div>
     <b-collapse :id="'MenuToggle__collapse' + _uid" v-model="show" class="MenuToggle__collapse">
       <slot />
     </b-collapse>

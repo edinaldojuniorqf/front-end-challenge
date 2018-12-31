@@ -29,7 +29,8 @@
           <template v-if="itemSub.comp">
             <component
               v-bind="itemSub"
-              :is="comps[itemSub.comp] || itemSub.comp" />
+              :is="comps[itemSub.comp] || itemSub.comp"
+              class="ItemMenu--submenu" />
           </template>
           <template v-else>
             <ItemMenu

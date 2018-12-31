@@ -1,7 +1,7 @@
 <template>
   <div>
     <MenuToggle v-model="show">
-      <BtnMenuTelefone slot="btn" @click="handleClick" />
+      <BtnMenuTelefone slot="btn" :open="show" @click="handleClick" />
       <MenuAccordion :items="items" :comps="comps" />
     </MenuToggle>
   </div>

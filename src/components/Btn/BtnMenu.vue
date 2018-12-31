@@ -1,10 +1,18 @@
 <template>
-  <div class="BtnMenu" @click="handleClick">
+  <div class="BtnMenu"
+    :class="{
+      'BtnMenu--open': open
+    }"
+    @click="handleClick">
     <i :class="icon" class="BtnMenu__icon"></i>
     <span class="BtnMenu__content">
       <slot />
     </span>
-    <i class="fa fa-chevron-down BtnMenu__iconChevron" aria-hidden="true"></i>
+    
+    <i v-if="showIcon" class="BtnMenu__iconChevron fa fa-chevron-down"
+    :class="{
+      'BtnMenu__iconChevron--open': open
+    }" aria-hidden="true"></i>
   </div>
 </template>
 
@@ -15,6 +23,16 @@ export default {
   props: {
     icon: {
       type: String
+    },
+
+    open: {
+      type: Boolean,
+      default: false
+    },
+
+    showIcon: {
+      type: Boolean,
+      default: false
     }
   },
 
@@ -35,13 +53,19 @@ export default {
   padding: $padding-tiny $padding-small;
   cursor: pointer;
 
-  .BtnMenu__icon {
-    font-size: 1rem;
+  .BtnMenu__iconChevron {
+    transition: all .4s;
+    font-size: $font-size-wee;
   }
 
-  .BtnMenu__iconChevron {
-    font-size: $font-size-small;
+  .BtnMenu__iconChevron--open {
+    transform: rotate(180deg);
   }
+
+}
+
+.BtnMenu--open {
+  transition: color .4s;
 }
 
 .BtnMenu--border {

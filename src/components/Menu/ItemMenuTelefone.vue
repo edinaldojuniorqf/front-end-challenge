@@ -3,9 +3,11 @@
     :title="title"
     :href="href"
     @click="handleClick">
-      <span class="ItemMenuTelefone__title">{{ title }}</span>
-      <span class="ItemMenuTelefone__setor" v-if="setor">
-        &nbsp; | {{ setor }}
+      <span>
+        <span class="ItemMenuTelefone__title">{{ title }}</span>
+        <span class="ItemMenuTelefone__setor" v-if="setor">
+          &nbsp; | {{ setor }}
+        </span>
       </span>
   </ItemMenu>
 </template>
@@ -45,10 +47,6 @@ export default {
 </script>
 
 <style lang="scss">
-.ItemMenuTelefone {
-  justify-content: flex-start;
-}
-
 .ItemMenuTelefone__title {
   font-weight: $font-weight-bold;
 }

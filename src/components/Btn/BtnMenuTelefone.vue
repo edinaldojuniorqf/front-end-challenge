@@ -1,6 +1,11 @@
 <template>
   <div>
-    <BtnMenu class="BtnMenu--border" icon="fa fa-phone" @click="handleClick">
+    <BtnMenu 
+      class="BtnMenu--border"
+      icon="fa fa-phone"
+      :showIcon="true"
+      :open="open"
+      @click="handleClick">
       TELEFONES
     </BtnMenu>
   </div>
@@ -14,6 +19,13 @@ export default {
 
   components: {
     BtnMenu
+  },
+
+  props: {
+    open: {
+      type: Boolean,
+      default: false
+    }
   },
 
   methods: {
