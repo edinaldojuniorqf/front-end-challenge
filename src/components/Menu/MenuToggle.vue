@@ -1,5 +1,5 @@
 <template>
-  <div class="MenuToggle">
+  <div class="MenuToggle" @click="handleMenuToggleClick">
     <div @click="handleClick">
       <slot name="btn">
         <BtnMenuToggle
@@ -41,6 +41,14 @@ export default {
     this.show = this.value
   },
 
+  mounted () {
+    document.addEventListener('click', () => {
+      if (this.show) {
+        this.show = false
+      }
+    })
+  },
+
   components: {
     BtnMenuToggle
   },
@@ -49,6 +57,12 @@ export default {
     handleClick () {
       this.show = !this.show
       this.$emit('input', this.show)
+    },
+
+    handleMenuToggleClick (e) {
+      if (this.show) {
+        e.stopPropagation()
+      }
     }
   }
 }
