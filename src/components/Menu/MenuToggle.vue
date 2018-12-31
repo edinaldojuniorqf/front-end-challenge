@@ -42,9 +42,12 @@ export default {
   },
 
   mounted () {
-    document.addEventListener('click', () => {
+    document.addEventListener('click', (e) => {
       if (this.show) {
-        this.show = false
+        if (e.target.dataset.timeClick != this.timeClick) {
+          this.show = false
+          this.$emit('input', this.show)
+        }
       }
     })
   },
@@ -60,7 +63,8 @@ export default {
     },
 
     handleMenuToggleClick (e) {
-      e.stopPropagation()
+      this.timeClick = Date.now()
+      e.target.dataset.timeClick = this.timeClick
     }
   }
 }
