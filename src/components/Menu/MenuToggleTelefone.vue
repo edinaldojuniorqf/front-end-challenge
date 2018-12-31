@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="MenuToggleTelefone">
     <MenuToggle v-model="show">
       <BtnMenuTelefone slot="btn" :open="show" @click="handleClick" />
       <MenuAccordion :items="items" :comps="comps" />
@@ -54,6 +54,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.MenuToggleTelefone {
+  position: relative;
+}
 </style>

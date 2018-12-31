@@ -89,6 +89,10 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .MenuToggle {
+    position: relative;
+  }
 }
 
 @include media-breakpoint-down(md) {

@@ -38,6 +38,8 @@ export default {
 <style lang="scss">
 .ItemMenuNav {
   color: $color-white;
+  padding-left: 0;
+  margin-right: $padding-base;
 
   &:hover {
     color: $color-white;

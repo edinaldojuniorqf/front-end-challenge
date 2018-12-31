@@ -59,7 +59,7 @@ export default {
   position: absolute;
   left: 0;
   background: #fff;
-  width: 100%;
+  white-space: nowrap;
   padding: $padding-tiny 0;
   margin: $margin-small 0;
   border-radius: $border-radius;

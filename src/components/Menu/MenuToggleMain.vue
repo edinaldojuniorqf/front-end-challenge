@@ -1,5 +1,5 @@
 <template>
-  <MenuToggle>
+  <MenuToggle class="MenuToggleMain">
     <MenuAccordion :items="items" :comps="comps" />
   </MenuToggle>
 </template>
@@ -40,6 +40,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.MenuToggleMain {
+  .MenuToggle__collapse {
+    width: 100%;
+  }
+}
 </style>

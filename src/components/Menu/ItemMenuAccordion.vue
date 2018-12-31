@@ -34,6 +34,7 @@ export default {
 <style lang="scss">
 .ItemMenuAccordion__icon {
   transition: all .4s;
+  margin-left: $margin-small;
 }
 
 .ItemMenuAccordion--open {

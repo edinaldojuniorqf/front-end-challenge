@@ -46,6 +46,10 @@ export default {
 .ItemMenuVeiculo {
   font-weight: $font-weight-bold;
 
+  .ItemmenuVeiculo__img {
+    margin-left: $margin-base;  
+  }
+
   &:hover {
     .ItemmenuVeiculo__img {
       transform: translateX(-10px);
