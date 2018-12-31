@@ -72,6 +72,10 @@ export default {
     }
   },
 
+  created () {
+    this.$emit('setItems')
+  },
+
   methods: {
     showSubmenu (item) {
       return item.items && item.items.length > 0
