@@ -5,6 +5,16 @@
       <div class="container">
         <HeaderMain />
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="d-flex col-md-8 order-md-2" style="height: 350px;">
+            <HeaderContent />
+          </div>
+          <div class="col-md-4 order-md-1">
+            
+          </div>
+        </div>
+      </div>
     </VideoFull>
   </div>
 </template>
@@ -12,13 +22,15 @@
 <script>
 import HeaderMain from '@/components/Header/HeaderMain'
 import VideoFull from '@/components/Header/VideoFull'
+import HeaderContent from '@/components/Header/HeaderContent'
 
 export default {
   name: 'SectionHeader',
 
   components: {
     HeaderMain,
-    VideoFull
+    VideoFull,
+    HeaderContent
   }
 }
 </script>
