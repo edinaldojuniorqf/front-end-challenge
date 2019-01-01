@@ -74,6 +74,7 @@ export default {
 .MenuToggle__collapse {
   position: absolute;
   left: 0;
+  z-index: $z-index-force;
   background: #fff;
   white-space: nowrap;
   padding: $padding-tiny 0;
