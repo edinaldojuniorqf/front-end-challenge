@@ -61,16 +61,17 @@ $color-footer-light: 				lighten($color-footer-base, 15%);
 $font-family-base: 							'Open Sans', sans-serif;
 $font-family-secondary: 				'Open Sans', sans-serif;
 
-$font-size-base:          	1rem * 0.875;
-$font-size-small:         	($font-size-base * 0.857); // 12px
-$font-size-wee:         		($font-size-base * 0.7142); // 10px
-$font-size-large:         	ceil($font-size-base * 1.25);		// 18px
-$font-size-h1:            	floor($font-size-base * 2.6);		// 36px
-$font-size-h2:            	floor($font-size-base * 2.15);	// 30px
-$font-size-h3:            	ceil($font-size-base * 1.7);		// 24px
-$font-size-h4:            	ceil($font-size-base * 1.25);		// 18px
-$font-size-h5:            	ceil($font-size-base * 1.125);	// 16px
-$font-size-h6:            	ceil($font-size-base * 0.85);		// 12px
+$font-size-default: 				16;
+$font-size-base:          	1rem * (14 / $font-size-default); // 14px
+$font-size-small:         	1rem * (12 / $font-size-default); // 12px
+$font-size-wee:         		1rem * (10 / $font-size-default); // 10px
+$font-size-large:         	1rem * (18 / $font-size-default);	// 18px
+$font-size-h1:            	1rem * (34 / $font-size-default);	// 34px
+$font-size-h2:            	1rem * (30 / $font-size-default);	// 30px
+$font-size-h3:            	1rem * (24 / $font-size-default);	// 24px
+$font-size-h4:            	1rem * (18 / $font-size-default);	// 18px
+$font-size-h5:            	1rem * (16 / $font-size-default);	// 16px											// 16px
+$font-size-h6:            	1rem * (12 / $font-size-default);	// 12px
 
 $font-weight-thin: 					100;
 $font-weight-extra-light: 	200;
