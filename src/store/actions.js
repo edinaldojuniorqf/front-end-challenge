@@ -1,5 +1,5 @@
-import menu from './db-fack/menu'
-import menuTelefones from './db-fack/menuTelefones'
+import menu from './db-fake/menu'
+import menuTelefones from './db-fake/menuTelefones'
 
 export default {
   setMenu ({commit}) {
