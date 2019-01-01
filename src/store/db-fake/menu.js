@@ -35,9 +35,11 @@ export default [
     ]
   },
   {
-    title: 'SERVIÇOS'
+    title: 'SERVIÇOS',
+    href: 'http://google.com'
   },
   {
-    title: 'VENDAS DIRETAS'
+    title: 'VENDAS DIRETAS',
+    href: 'http://google.com'
   }
 ]
