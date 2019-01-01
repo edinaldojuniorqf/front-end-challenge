@@ -1,5 +1,7 @@
 <template>
-  <div class="ItemMenu" @click="handleClick">
+  <div class="ItemMenu" :class="{
+    'ItemMenu--link': href
+  }" @click="handleClick">
     <slot />
   </div>
 </template>
@@ -27,7 +29,7 @@ export default {
     }
   }
 }
-</script>
+</script>ItemMenu__link
 
 <style lang="scss">
 .ItemMenu {
@@ -38,12 +40,15 @@ export default {
   padding: $padding-top-item-menu $padding-left-item-menu;
   font-size: $font-size-small;
   font-weight: $font-weight-bold;
-  cursor: pointer;
   transition: all .4s;
 
   &:hover {
     color: $color-primary-base;
   }
+}
+
+.ItemMenu--link {
+  cursor: pointer;
 }
 
 .ItemMenu--submenu {

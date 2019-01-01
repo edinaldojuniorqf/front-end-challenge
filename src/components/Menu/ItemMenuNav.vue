@@ -1,13 +1,18 @@
 <template>
-  <ItemMenu class="ItemMenuNav"
+  <ItemMenu
+    class="ItemMenuNav"
     :class="{
-      'ItemMenuNav--open': open
-    }">
+      'ItemMenuNav--open': open,
+      'ItemMenu--link': showIcon
+    }"
+    :href="href" :title="title">
     <slot />
-    <i v-if="showIcon" class="ItemMenuNav__icon fa fa-chevron-down"
-    :class="{
-      'ItemMenuNav__icon--open': open
-    }" aria-hidden="true"></i>
+    <i v-if="showIcon" 
+      class="ItemMenuNav__icon fa fa-chevron-down"
+      :class="{
+        'ItemMenuNav__icon--open': open
+      }"
+      aria-hidden="true"></i>
   </ItemMenu>
 </template>
 
@@ -30,6 +35,14 @@ export default {
     showIcon: {
       type: Boolean,
       default: false
+    },
+
+    href: {
+      type: String
+    },
+
+    title: {
+      type: String
     }
   }
 }

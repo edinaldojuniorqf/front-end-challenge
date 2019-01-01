@@ -32,6 +32,10 @@ export default {
 </script>
 
 <style lang="scss">
+.ItemMenuAccordion {
+  cursor: pointer;
+}
+
 .ItemMenuAccordion__icon {
   transition: all .4s;
   margin-left: $margin-small;
