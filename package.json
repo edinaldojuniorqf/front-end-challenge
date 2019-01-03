@@ -12,7 +12,10 @@
     "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.11",
     "font-awesome": "^4.7.0",
+    "v-money": "^0.8.1",
     "vue": "^2.5.17",
+    "vue-select": "^2.5.1",
+    "vue-the-mask": "^0.11.1",
     "vuex": "^3.0.1",
     "vuex-connect": "^2.2.0"
   },
