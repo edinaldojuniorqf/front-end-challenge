@@ -15,8 +15,8 @@ export default {
   },
 
   infoVersaoDestaque: {
-    infoExtra: 'Você tem mais para descobrir',
-    valor: 40987.00,
-    descontoPerc: 30
+    infoExtra: null,
+    valor: null,
+    valorDesconto: null
   }
 }

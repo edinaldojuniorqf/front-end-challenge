@@ -2,6 +2,7 @@ import menu from './db-fake/menu'
 import menuTelefones from './db-fake/menuTelefones'
 import veiculos from './db-fake/veiculos'
 import versoes from './db-fake/versoes'
+import infoVersoesDestaques from './db-fake/infoVersoesDestaques'
 
 export default {
   setMenu ({commit}) {
@@ -35,5 +36,15 @@ export default {
 
     commit('SET_VERSOES', versoesVeiculo)
     commit('SET_VERSAO', versoesVeiculo[0])
+  },
+
+  setInfoVersaoDestaque ({commit}, idVersao) {
+    let infoVersaoDestaque = infoVersoesDestaques.find(item => {
+      return item.versao.id === idVersao
+    })
+
+    if (infoVersaoDestaque) {
+      commit('SET_INFO_VERSAO_DESTAQUE', infoVersaoDestaque)
+    }
   }
 }
