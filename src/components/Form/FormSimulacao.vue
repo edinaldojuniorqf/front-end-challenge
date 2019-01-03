@@ -19,61 +19,97 @@
 
       <hr class="FormSimulacao__hr" />
 
-      <input class="FormSimulacao__input"
-        v-model="simulacao.nome"
-        type="text"
-        placeholder="Nome*"
-        maxlength="255">
+      <div class="form-group">
+        <input class="FormSimulacao__input"
+          :class="{
+            'FormSimulacao__input--danger': validation.hasError('simulacao.nome')
+          }"
+          v-model="simulacao.nome"
+          type="text"
+          placeholder="Nome*"
+          maxlength="255">
+        <span class="help-block">{{ validation.firstError('simulacao.nome') }}</span>
+      </div>
       
-      <input class="FormSimulacao__input"
-        v-model="simulacao.email"
-        type="text"
-        placeholder="E-mail*"
-        maxlength="255">
-
-      <input class="FormSimulacao__input"
-        v-model="simulacao.telefone"
-        type="text"
-        placeholder="Telefone*"
-        v-mask="[masks.telefone, masks.celular]">
-
-      <label>Número de parcelas*</label>
-      <div class="FormSimulacao__radio">
-        <RadioCustom name="version"
-          v-model="simulacao.nParcelas"
-          valueDefalut="12">
-          12
-        </RadioCustom>
-        <RadioCustom name="version"
-          v-model="simulacao.nParcelas"
-          valueDefalut="24">
-          24
-        </RadioCustom>
-        <RadioCustom name="version"
-          v-model="simulacao.nParcelas"
-          valueDefalut="36">
-          36
-        </RadioCustom>
-        <RadioCustom name="version"
-          v-model="simulacao.nParcelas"
-          valueDefalut="48">
-          48
-        </RadioCustom>
+      <div class="form-group">
+        <input class="FormSimulacao__input"
+          :class="{
+            'FormSimulacao__input--danger': validation.hasError('simulacao.email')
+          }"
+          v-model="simulacao.email"
+          type="text"
+          placeholder="E-mail*"
+          maxlength="255">
+        <span class="help-block">{{ validation.firstError('simulacao.email') }}</span>
       </div>
 
-      <label>Valor da entrada*</label>
-      <money class="FormSimulacao__input"
-        v-model="simulacao.valorEntrada"
-        v-bind="money" />
+      <div class="form-group">
+        <input class="FormSimulacao__input"
+          :class="{
+            'FormSimulacao__input--danger': validation.hasError('simulacao.telefone')
+          }"
+          v-model="simulacao.telefone"
+          type="text"
+          placeholder="Telefone*"
+          v-mask="[masks.telefone, masks.celular]">
+        <span class="help-block">{{ validation.firstError('simulacao.telefone') }}</span>
+      </div>
 
-      <CheckCustom v-model="simulacao.receberOfertas">
-        Desejo receber ofertas exclusivas da PG Prime.
-      </CheckCustom>
+      <div class="form-group"
+        :class="{
+          'FormSimulacao__form-group--danger': validation.hasError('simulacao.nParcelas')
+        }">
+        <label>Número de parcelas*</label>
+        <div class="FormSimulacao__radio">
+          <RadioCustom name="version"
+            v-model="simulacao.nParcelas"
+            valueDefalut="12">
+            12
+          </RadioCustom>
+          <RadioCustom name="version"
+            v-model="simulacao.nParcelas"
+            valueDefalut="24">
+            24
+          </RadioCustom>
+          <RadioCustom name="version"
+            v-model="simulacao.nParcelas"
+            valueDefalut="36">
+            36
+          </RadioCustom>
+          <RadioCustom name="version"
+            v-model="simulacao.nParcelas"
+            valueDefalut="48">
+            48
+          </RadioCustom>
+        </div>
+        <span class="help-block">{{ validation.firstError('simulacao.nParcelas') }}</span>
+      </div>
+
+      <div class="form-group"
+        :class="{
+           'FormSimulacao__form-group--danger': validation.hasError('simulacao.valorEntrada')
+        }">
+        <label>Valor da entrada*</label>
+        <money class="FormSimulacao__input"
+          :class="{
+            'FormSimulacao__input--danger': validation.hasError('simulacao.valorEntrada')
+          }"
+          v-model="simulacao.valorEntrada"
+          v-bind="money" />
+          <span class="help-block">{{ validation.firstError('simulacao.valorEntrada') }}</span>
+      </div>
+
+      <div class="form-group">
+        <CheckCustom v-model="simulacao.receberOfertas">
+          Desejo receber ofertas exclusivas da PG Prime.
+        </CheckCustom>
+      </div>
 
       <BtnPrimary type="submit"
         @click.native.prevent.stop="handleSubmit">
         SIMULAR FINANCIMENTO
       </BtnPrimary>
+      <p class="help-block mt-2">{{ validation.firstError() }}</p>
     </form>
 
     <a href="#" class="FormSimulacao__politica">
@@ -87,6 +123,11 @@ import RadioCustom from '@/components/Form/RadioCustom'
 import CheckCustom from '@/components/Form/CheckCustom'
 import BtnPrimary from '@/components/Btn/BtnPrimary'
 import masks from '@/util/masks'
+import SimpleVueValidation from 'simple-vue-validator'
+
+SimpleVueValidation.setMode('conservative');
+
+const Validator = SimpleVueValidation.Validator
 
 export default {
   name: 'FormSimulacao',
@@ -118,16 +159,46 @@ export default {
         nome: null,
         email: null,
         telefone: null,
-        nParcelas: '12',
+        nParcelas: null,
         valorEntrada: 0,
         receberOfertas: false
       }
     }
   },
 
+  validators: {
+    'simulacao.nome' (value) {
+      return Validator.value(value).required('Informe seu nome')
+    },
+
+    'simulacao.email' (value) {
+      return Validator.value(value)
+        .email('Informe um e-email válido')
+        .required('Informe seu e-mail')
+    },
+
+    'simulacao.telefone' (value) {
+      return Validator.value(value).required('Informe seu telefone')
+    },
+
+    'simulacao.nParcelas' (value) {
+      return Validator.value(value).required('Informe o número de parcelas')
+    },
+
+    'simulacao.valorEntrada' (value) {
+      return Validator.value(value).greaterThan(0, 'Informe o valor da entrada')
+    }
+  },
+
   methods: {
     handleSubmit () {
-      console.log(this.simulacao)
+      this.$validate().then(success => {
+        if (success) {
+          console.log('ok')
+        } else {
+          console.log('erro')
+        }
+      })
     }
   }
 }
@@ -203,7 +274,7 @@ export default {
     height: 30px;
     outline: none;
     padding: $padding-wee;
-    margin: 0 0 $margin-small 0;
+    margin: 0;
     display: block;
     width: 100%;
     color: rgba(255,255,255,.6);
@@ -212,10 +283,31 @@ export default {
     }
   }
 
+  .FormSimulacao__input--danger {
+    border-color: $color-danger;
+    color: $color-danger;
+    &::placeholder {
+      color: $color-danger;
+    }
+  }
+
+  .FormSimulacao__form-group--danger {
+    color: $color-danger;
+
+    .RadioCustom {
+      .checkmark {
+        border-color: $color-danger;
+      }
+    }
+  }
+
+  .help-block {
+    color: $color-danger;
+  }
+
   .FormSimulacao__radio {
     display: flex;
     justify-content: space-between;
-    margin-bottom: $margin-small;
     
     .RadioCustom {
       margin-right: $margin-base;
