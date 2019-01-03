@@ -5,13 +5,13 @@
       <div class="container">
         <HeaderMain />
       </div>
-      <div class="container">
+      <div class="container SectionHeader__container">
         <div class="row">
           <div class="d-flex col-md-8 order-md-2" style="height: 350px;">
             <HeaderContent />
           </div>
           <div class="col-md-4 order-md-1">
-            
+            <FormSimulacao />
           </div>
         </div>
       </div>
@@ -23,6 +23,7 @@
 import HeaderMain from '@/components/Header/HeaderMain'
 import VideoFull from '@/components/Header/VideoFull'
 import HeaderContent from '@/components/Header/HeaderContent'
+import FormSimulacao from '@/components/Form/FormSimulacao'
 
 export default {
   name: 'SectionHeader',
@@ -30,10 +31,15 @@ export default {
   components: {
     HeaderMain,
     VideoFull,
-    HeaderContent
+    HeaderContent,
+    FormSimulacao
   }
 }
 </script>
 
 <style lang="scss">
+.SectionHeader__container {
+  margin-top: $margin-big;
+  padding-bottom: $padding-extra;
+}
 </style>
