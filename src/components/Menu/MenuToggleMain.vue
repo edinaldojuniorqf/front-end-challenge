@@ -7,7 +7,7 @@
 <script>
 import MenuToggle from '@/components/Menu/MenuToggle'
 import MenuAccordion from '@/components/Menu/MenuAccordion'
-import ItemMenuVeiculo from '@/components/Menu/ItemMenuVeiculo'
+import ItemMenuVeiculo from '@/components/Menu/ItemMenuVeiculo.container'
 
 export default {
   name: 'MenuToggleAccordion',
