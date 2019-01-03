@@ -211,9 +211,10 @@ export default {
       })
     },
 
-    handleVersaoInput (value) {
-      this.simulacao.versao = value
-      this.$emit('setVersao', value)
+    handleVersaoInput (versao) {
+      this.simulacao.versao = versao
+      this.$emit('setVersao', versao)
+      this.$emit('setInfoVersaoDestaque', versao.id)
     }
   }
 }

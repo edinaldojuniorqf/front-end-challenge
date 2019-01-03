@@ -9,5 +9,9 @@ export default connect({
 
   mutationsToEvents: {
     setVersao: 'SET_VERSAO'
+  },
+
+  actionsToEvents: {
+    setInfoVersaoDestaque: 'setInfoVersaoDestaque'
   }
 })(FormSimulacao)
