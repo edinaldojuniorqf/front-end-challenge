@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './App.container'
 import store from './store'
 import { Collapse } from 'bootstrap-vue/es/components'
 import vSelect from 'vue-select'
