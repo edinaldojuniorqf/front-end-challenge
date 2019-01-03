@@ -12,6 +12,11 @@ export default {
 
   components: {
     SectionHeader
+  },
+
+  mounted () {
+    // seta o veículo padrão
+    this.$emit('setVeiculo', 'etios-hatch-2017')
   }
 }
 </script>
