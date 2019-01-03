@@ -11,6 +11,13 @@
 export default {
   name: 'VideoFull',
 
+  props: {
+    gapHeight: {
+      type: Number,
+      default: 200 // folga de 200 caso o container cresça
+    }
+  },
+
   mounted () {
     this.setIframe()
     window.addEventListener('resize', this.setIframe)
@@ -22,7 +29,7 @@ export default {
       let iframe = el.getElementsByTagName('iframe')[0]
 
       let widthWrapper = el.offsetWidth
-      let heightWrapper = el.offsetHeight
+      let heightWrapper = el.offsetHeight + this.gapHeight
       let widthIframe = iframe.offsetWidth
       let heightIframe = iframe.offsetHeight
 
