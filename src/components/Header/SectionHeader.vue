@@ -23,7 +23,7 @@
 import HeaderMain from '@/components/Header/HeaderMain'
 import VideoFull from '@/components/Header/VideoFull'
 import HeaderContent from '@/components/Header/HeaderContent'
-import FormSimulacao from '@/components/Form/FormSimulacao'
+import FormSimulacao from '@/components/Form/FormSimulacao.container'
 
 export default {
   name: 'SectionHeader',
