@@ -50,6 +50,7 @@ $color-background-base: 		#2a2a2a;
 $color-background-dark: 		darken($color-background-base, 8%);
 $color-background-light: 		lighten($color-background-base, 15%);
 $color-background-submenu:  $color-primary-base;
+$color-background-submenu-hover: $color-primary-dark;
 
 $color-font:								$color-white;
 
@@ -118,6 +119,7 @@ $z-index-background: 				0;
 
 $border-radius: 						3px;
 $border: 										1px solid $color-gray-light;
+$border-input-form:					1px solid #9f9f9f;
 
 $time-delay: 								0.05s;
 $time-duration: 						0.25s;
