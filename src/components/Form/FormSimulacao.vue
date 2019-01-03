@@ -6,14 +6,14 @@
     <form>
       <label for="FormSimulacao__versao">Escolha uma versão</label>
       <v-select inputId="FormSimulacao__versao"
-        v-model="simulacao.versao"
-        :options="versions"
-        :value="{value: 1, text: '1.8L DUAL VVT-1 16V'}"
-        label="text"
+        :value="versao"
+        @input="handleVersaoInput"
+        :options="versoes"
+        label="nome"
         :clearable="false"
         :searchable="false">
         <template slot="option" slot-scope="option">
-          {{ option.text }}
+          {{ option.nome }}
         </template>
       </v-select>
 
@@ -138,12 +138,23 @@ export default {
     BtnPrimary
   },
 
-  data () {
-    let versions = [
-      {value: 1, text: '1.8L DUAL VVT-1 16V'},
-      {value: 2, text: '2.0L DUAL VVT-1 16V'}
-    ];
+  props: {
+    versoes: {
+      type: Array,
+      default () {
+        return []
+      }
+    },
 
+    versao: {
+      type: Object,
+      default () {
+        return null
+      }
+    }
+  },
+
+  data () {
     return {
       masks,
       money: {
@@ -153,9 +164,8 @@ export default {
         precision: 2,
         masked: false
       },
-      versions,
       simulacao: {
-        versao: versions[0],
+        versao: null,
         nome: null,
         email: null,
         telefone: null,
@@ -199,6 +209,11 @@ export default {
           console.log('erro')
         }
       })
+    },
+
+    handleVersaoInput (value) {
+      this.simulacao.versao = value
+      this.$emit('setVersao', value)
     }
   }
 }
