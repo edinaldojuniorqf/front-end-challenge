@@ -17,7 +17,8 @@
             <component
               v-bind="itemSub"
               :is="comps[itemSub.comp] || itemSub.comp"
-              :key="indexSub" />
+              :key="indexSub"
+              @close="handleClose(index)" />
           </template>
           <template v-else>
             <ItemMenu
@@ -83,6 +84,13 @@ export default {
 
     handleBtnMenuToggleClick (index) {
       this.show[index] = !this.show[index]
+    },
+
+    handleClose (index) {
+      this.$nextTick(() => {
+        this.show[index] = false
+        this.$forceUpdate() // vue não monitora mudança no array
+      })
     }
   }
 }

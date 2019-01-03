@@ -6,7 +6,7 @@
 
 <script>
 import MenuNav from '@/components/Menu/MenuNav'
-import ItemMenuVeiculo from '@/components/Menu/ItemMenuVeiculo'
+import ItemMenuVeiculo from '@/components/Menu/ItemMenuVeiculo.container'
 
 export default {
   name: 'MenuNavMain',

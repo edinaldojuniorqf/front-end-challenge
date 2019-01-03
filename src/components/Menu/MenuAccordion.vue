@@ -30,7 +30,8 @@
             <component
               v-bind="itemSub"
               :is="comps[itemSub.comp] || itemSub.comp"
-              class="ItemMenu--submenu" />
+              class="ItemMenu--submenu"
+              @close="handleClose" />
           </template>
           <template v-else>
             <ItemMenu
@@ -85,6 +86,10 @@ export default {
 
     getIdAccordion (index) {
       return 'item_' + index + '_' + this._uid
+    },
+
+    handleClose () {
+      this.$emit('close')
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
-  <MenuToggle class="MenuToggleMain">
-    <MenuAccordion :items="items" :comps="comps" />
+  <MenuToggle class="MenuToggleMain" v-model="open">
+    <MenuAccordion :items="items" :comps="comps" @close="handleClose" />
   </MenuToggle>
 </template>
 
@@ -21,7 +21,8 @@ export default {
     return {
       comps: {
         ItemMenuVeiculo
-      }
+      },
+      open: false
     }
   },
 
@@ -36,6 +37,12 @@ export default {
 
   created () {
     this.$emit('setItems')
+  },
+
+  methods: {
+    handleClose () {
+      this.open = false
+    }
   }
 }
 </script>

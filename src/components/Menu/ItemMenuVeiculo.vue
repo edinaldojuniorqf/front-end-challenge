@@ -31,12 +31,21 @@ export default {
     srcImg: {
       required: true,
       type: String
+    },
+
+    veiculo: {
+      type: Object,
+      default () {
+        return {}
+      }
     }
   },
 
   methods: {
     handleClick () {
       this.$emit('click')
+      this.$emit('close')
+      this.$emit('setVeiculo', this.veiculo.id)
     }
   }
 }
@@ -45,6 +54,7 @@ export default {
 <style lang="scss">
 .ItemMenuVeiculo {
   font-weight: $font-weight-bold;
+  cursor: pointer;
 
   .ItemmenuVeiculo__img {
     margin-left: $margin-base;  
