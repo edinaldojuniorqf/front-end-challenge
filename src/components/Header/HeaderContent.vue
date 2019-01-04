@@ -1,12 +1,24 @@
 <template>
   <div class="HeaderContent">
     <div class="HeaderContent__content">
-      <h1 class="HeaderContent__title">ETIOS HATCH 2017</h1>
-      <h2 class="HeaderContent__subtitle">X 1.3 MANUAL</h2>
-      <h3 class="HeaderContent__desc">Você tem mais para descobrir</h3>
+      <h1 class="HeaderContent__title">
+        {{ veiculo.nome }}
+      </h1>
+      <h2 class="HeaderContent__subtitle">
+        {{ versao.nome }}
+      </h2>
+      <h3 class="HeaderContent__desc">
+        {{ infoVersaoDestaque.infoExtra }}
+      </h3>
 
-      <h2 class="HeaderContent__de">de <span class="HeaderContent__valorDe">R$ 44.120,00</span></h2>
-      <h1 class="HeaderContent__por">por R$ 40.987,00</h1>
+      <h2 class="HeaderContent__de" v-if="infoVersaoDestaque.valorDesconto">
+        de 
+        <span class="HeaderContent__valorDe">{{ infoVersaoDestaque.valor | currency('R$ ', 2, { decimalSeparator: ',', thousandsSeparator: '.' }) }}</span>
+      </h2>
+      <h1 class="HeaderContent__por">
+        <template v-if="infoVersaoDestaque.valorDesconto">por </template>
+        {{ infoVersaoDestaque.valorDesconto ? infoVersaoDestaque.valorDesconto : infoVersaoDestaque.valor | currency('R$ ', 2, { decimalSeparator: ',', thousandsSeparator: '.' }) }}
+      </h1>
       <small class="HeaderContent__info">*Consulte as Condições Comerciais.</small>
     </div>
     <div class="HeaderContent__footer">
@@ -17,7 +29,30 @@
 
 <script>
 export default {
-  name: 'HeaderContent'
+  name: 'HeaderContent',
+
+  props: {
+    veiculo: {
+      type: Object,
+      default () {
+        return {}
+      }
+    },
+
+    versao: {
+      type: Object,
+      default () {
+        return {}
+      }
+    },
+
+    infoVersaoDestaque: {
+      type: Object,
+      default () {
+        return {}
+      }
+    }
+  }
 }
 </script>
 

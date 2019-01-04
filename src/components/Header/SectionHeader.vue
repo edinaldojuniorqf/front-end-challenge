@@ -22,7 +22,7 @@
 <script>
 import HeaderMain from '@/components/Header/HeaderMain'
 import VideoFull from '@/components/Header/VideoFull'
-import HeaderContent from '@/components/Header/HeaderContent'
+import HeaderContent from '@/components/Header/HeaderContent.container'
 import FormSimulacao from '@/components/Form/FormSimulacao.container'
 
 export default {
