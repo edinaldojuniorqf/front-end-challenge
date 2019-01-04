@@ -13,7 +13,7 @@ export default [
     versao: {
       id: 2
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'BÔNUS- ÚLTIMAS UNIDADES',
     valor: 33000,
     valorDesconto: 28000
   },
@@ -31,7 +31,7 @@ export default [
     versao: {
       id: 4
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'IPVA TOTAL GRÁTIS + BÔNUS- ÚLTIMAS UNIDADES',
     valor: 52700,
     valorDesconto: 40000
   },
@@ -40,7 +40,7 @@ export default [
     versao: {
       id: 5
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'IPVA TOTAL GRÁTIS + BÔNUS- ÚLTIMAS UNIDADES',
     valor: 66800,
     valorDesconto: 60000
   },
@@ -49,7 +49,7 @@ export default [
     versao: {
       id: 6
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'Agende seu test-drive e surpreenda-se!',
     valor: 45600,
     valorDesconto: 42300
   },
@@ -58,7 +58,7 @@ export default [
     versao: {
       id: 7
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'Agende seu test-drive e surpreenda-se!',
     valor: 88000,
     valorDesconto: 85900
   },
@@ -67,7 +67,7 @@ export default [
     versao: {
       id: 8
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'Ar condicionado Dual Zone, Rodas aro 17, Sistema Multimídia Toyota Play e Controle de estabilidade e tração.',
     valor: 23000,
     valorDesconto: 22199
   },
@@ -76,7 +76,7 @@ export default [
     versao: {
       id: 9
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'Ar condicionado Dual Zone, Rodas aro 17, Sistema Multimídia Toyota Play e Controle de estabilidade e tração',
     valor: 43000,
     valorDesconto: 420000
   },
@@ -85,7 +85,7 @@ export default [
     versao: {
       id: 10
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'Ar condicionado Dual Zone, Rodas aro 17',
     valor: 233000,
     valorDesconto: 220080
   },
@@ -103,7 +103,7 @@ export default [
     versao: {
       id: 12
     },
-    infoExtra: 'Você tem mais para descobrir',
+    infoExtra: 'Agende seu test-drive e surpreenda-se!',
     valor: 331089,
     valorDesconto: 311089
   }  
