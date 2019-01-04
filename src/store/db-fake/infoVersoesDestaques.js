@@ -78,7 +78,7 @@ export default [
     },
     infoExtra: 'Ar condicionado Dual Zone, Rodas aro 17, Sistema Multimídia Toyota Play e Controle de estabilidade e tração',
     valor: 43000,
-    valorDesconto: 420000
+    valorDesconto: 42000
   },
   {
     id: 10,
