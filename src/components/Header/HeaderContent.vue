@@ -125,6 +125,7 @@ export default {
     flex-direction: column;
     align-items: center;
     padding-bottom: $padding-wee;
+    margin-top: $margin-big;
 
     .HeaderContent__titleLike {
       font-size: $font-size-small;

@@ -227,6 +227,10 @@ export default {
   color: $color-white;
   font-size: $font-size-small;
 
+  @include media-breakpoint-down(sm) {
+    margin-top: $margin-big;
+  }
+
   .FormSimulacao__title {
     margin: 0;
     font-weight: $font-weight-normal;
