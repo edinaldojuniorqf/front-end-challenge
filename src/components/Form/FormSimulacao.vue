@@ -277,7 +277,7 @@ export default {
       overflow-y: auto;
 
       & > .highlight > a {
-        /* background: $color-background-submenu; */
+        background: $color-background-submenu;
         color: $color-white;
       }
     }
