@@ -1,7 +1,7 @@
 <template>
   <div class="SectionHeader">
     <VideoFull>
-      <iframe slot="video" src="https://player.vimeo.com/video/202373809?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&background=1#t=6s" allow="autoplay" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe slot="video" src="https://player.vimeo.com/video/202373809?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1&background=1" allow="autoplay" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       <div class="container">
         <HeaderMain />
       </div>
