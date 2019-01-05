@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>front-end-challenge</title>
+    <meta property="og:url"           content="https://github.com/autoforce/front-end-challenge" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Front-End Challenge" />
+    <meta property="og:description"   content="Esta é a segunda fase do processo seletivo para vaga de desenvolvedor front-end da AutoForce." />
+    <meta property="og:image"         content="https://avatars1.githubusercontent.com/u/26749640?s=400&v=4" />
   </head>
   <body>
     <noscript>
@@ -13,5 +18,16 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
   </body>
 </html>

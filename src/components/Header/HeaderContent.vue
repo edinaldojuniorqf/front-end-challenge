@@ -22,14 +22,26 @@
       <small class="HeaderContent__info">*Consulte as Condições Comerciais.</small>
     </div>
     <div class="HeaderContent__footer">
-      
+      <div class="HeaderContent__titleLike">Gostou? Então compartilhe.</div>
+      <Like />
+      <small>
+        *Imagens meramente ilustrativas. Alguns itens apresentados poderão não estar disponíveis nas versões.
+        Preços sugeridos e válidos até 31/07/2015. Os preços poderão ser modificados sem aviso prévio. Consulte e
+        confirme todas as informações com um de nossos vendedores.
+      </small>
     </div>
   </div>
 </template>
 
 <script>
+import Like from '@/components/Header/Like'
+
 export default {
   name: 'HeaderContent',
+
+  components: {
+    Like
+  },
 
   props: {
     veiculo: {
@@ -106,6 +118,25 @@ export default {
     font-size: 1rem * (10 / $font-size-default);
     font-weight: $font-weight-semi-bold;
     margin: 0 0 $margin-base;
+  }
+
+  .HeaderContent__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: $padding-wee;
+
+    .HeaderContent__titleLike {
+      font-size: $font-size-small;
+    }
+
+    .Like {
+      margin: $margin-wee 0 $margin-small 0;
+    }
+
+    small {
+      font-size: $font-size-wee;
+    }
   }
 }
 </style>

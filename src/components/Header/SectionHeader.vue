@@ -7,7 +7,7 @@
       </div>
       <div class="container SectionHeader__container">
         <div class="row">
-          <div class="d-flex col-md-8 order-md-2" style="height: 350px;">
+          <div class="d-flex col-md-8 order-md-2">
             <HeaderContent />
           </div>
           <div class="col-md-4 order-md-1">
