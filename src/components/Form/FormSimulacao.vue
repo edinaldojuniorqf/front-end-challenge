@@ -2,6 +2,8 @@
   <div class="FormSimulacao">
     <h4 class="FormSimulacao__title">SIMULAR FINANCIAMENTO</h4>
     <h6 class="FormSimulacao_subtitle">Escolha a parcela que cabe no seu bolso</h6>
+
+    <hr class="FormSimulacao__hr" />
     
     <form>
       <label for="FormSimulacao__versao">Escolha uma versão</label>
@@ -238,7 +240,7 @@ export default {
   }
 
   .FormSimulacao_subtitle {
-    margin-bottom: $margin-extra;
+    margin-bottom: $margin-small;
     font-weight: $font-weight-normal;
     text-align: center;
   }
@@ -343,7 +345,7 @@ export default {
   .FormSimulacao__politica {
     display: inline-block;
     text-decoration: underline;
-    margin-top: $padding-extra;
+    margin-top: $padding-small;
     color: $color-white;
   }
 }
