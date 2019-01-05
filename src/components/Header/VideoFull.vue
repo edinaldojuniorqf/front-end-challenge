@@ -14,7 +14,7 @@ export default {
   props: {
     gapHeight: {
       type: Number,
-      default: 200 // folga de 200 caso o container cresça
+      default: 120 // folga caso o container cresça
     }
   },
 
