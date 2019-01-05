@@ -229,13 +229,13 @@ export default {
 
   .FormSimulacao__title {
     margin: 0;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-normal;
     text-align: center;
   }
 
   .FormSimulacao_subtitle {
     margin-bottom: $margin-extra;
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-normal;
     text-align: center;
   }
 
