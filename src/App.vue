@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <SectionHeader />
+    <SectionChamadas />
   </div>
 </template>
 
 <script>
 import SectionHeader from '@/components/Header/SectionHeader'
+import SectionChamadas from '@/components/Chamadas/SectionChamadas'
 
 export default {
   name: 'app',
 
   components: {
-    SectionHeader
+    SectionHeader,
+    SectionChamadas
   },
 
   mounted () {
