@@ -20,7 +20,7 @@ export default {
 .BtnPrimary {
   color:  $color-white;
   font-weight: $font-weight-bold;
-  //box-shadow: 1px 2px 0px 0px rgba(171, 46, 67, 0.7), 2px 3px 6px 0px rgba(171, 46, 67, 0.7);
+  box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.7);
   background-color: $color-primary-base;
   border-radius: $border-radius;
   border: none;
@@ -33,7 +33,7 @@ export default {
   outline: none;
 
   &:hover {
-    background-color: $color-primary-dark;
+    background-color: $color-primary-light;
   }
 
   &:focus {
