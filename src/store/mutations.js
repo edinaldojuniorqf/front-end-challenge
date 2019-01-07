@@ -21,5 +21,9 @@ export default {
 
   SET_INFO_VERSAO_DESTAQUE (state, infoDestaque) {
     state.infoVersaoDestaque = infoDestaque
+  },
+
+  SET_INFO_VERSAO_GERAL (state, infoGeral) {
+    state.infoVersaoGeral = infoGeral
   }
 }
