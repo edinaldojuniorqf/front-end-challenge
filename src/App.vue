@@ -2,19 +2,22 @@
   <div id="app">
     <SectionHeader />
     <SectionChamadas />
+    <SectionVersoes />
   </div>
 </template>
 
 <script>
 import SectionHeader from '@/components/Header/SectionHeader'
 import SectionChamadas from '@/components/Chamadas/SectionChamadas'
+import SectionVersoes from '@/components/Versoes/SectionVersoes'
 
 export default {
   name: 'app',
 
   components: {
     SectionHeader,
-    SectionChamadas
+    SectionChamadas,
+    SectionVersoes
   },
 
   mounted () {
