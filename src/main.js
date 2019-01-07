@@ -7,6 +7,7 @@ import VueTheMask from 'vue-the-mask'
 import money from 'v-money'
 import SimpleVueValidation from 'simple-vue-validator'
 import Vue2Filters from 'vue2-filters'
+import VueCarousel from 'vue-carousel'
 
 Vue.config.productionTip = false
 
@@ -15,6 +16,7 @@ Vue.use(VueTheMask)
 Vue.use(money, {precision: 2})
 Vue.use(SimpleVueValidation)
 Vue.use(Vue2Filters)
+Vue.use(VueCarousel)
 Vue.component('v-select', vSelect)
 
 new Vue({
