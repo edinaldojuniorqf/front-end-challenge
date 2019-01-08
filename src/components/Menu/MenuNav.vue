@@ -12,23 +12,25 @@
           {{ item.title }}
         </ItemMenuNav>
         
-        <template v-for="(itemSub, indexSub) in item.items">
-          <template v-if="itemSub.comp">
-            <component
-              v-bind="itemSub"
-              :is="comps[itemSub.comp] || itemSub.comp"
-              :key="indexSub"
-              @close="handleClose(index)" />
+        <VuePerfectScrollbar class="MenuNav__scroll" :settings="settings">
+          <template v-for="(itemSub, indexSub) in item.items">
+            <template v-if="itemSub.comp">
+              <component
+                v-bind="itemSub"
+                :is="comps[itemSub.comp] || itemSub.comp"
+                :key="indexSub"
+                @close="handleClose(index)" />
+            </template>
+            <template v-else>
+              <ItemMenu
+                v-bind="itemSub"
+                :href="itemSub.href"
+                :key="indexSub">
+                {{ itemSub.title }}
+              </ItemMenu>
+            </template>  
           </template>
-          <template v-else>
-            <ItemMenu
-              v-bind="itemSub"
-              :href="itemSub.href"
-              :key="indexSub">
-              {{ itemSub.title }}
-            </ItemMenu>
-          </template>  
-        </template>
+        </VuePerfectScrollbar>
 
       </MenuToggle>
       <ItemMenuNav v-else
@@ -69,7 +71,11 @@ export default {
 
   data () {
     return {
-      show: []
+      show: [],
+      settings: {
+        maxScrollbarLength: 60,
+        wheelSpeed: 0.3
+      }
     }
   },
 
@@ -104,6 +110,11 @@ export default {
 
   .MenuToggle {
     position: relative;
+  }
+
+  .MenuNav__scroll {
+    position: relative;
+    max-height: 270px;
   }
 }
 </style>
