@@ -2,7 +2,7 @@
   <div>
     <BtnMenu 
       class="BtnMenu--border"
-      icon="fa fa-phone"
+      icon="phone"
       :showIcon="true"
       :open="open"
       @click="handleClick">

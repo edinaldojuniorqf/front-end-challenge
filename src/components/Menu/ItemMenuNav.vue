@@ -7,12 +7,13 @@
     }"
     :href="href" :title="title">
     <slot />
-    <i v-if="showIcon" 
-      class="ItemMenuNav__icon fa fa-chevron-down"
+    <font-awesome-icon 
+      v-if="showIcon" 
+      icon="angle-down"
+      class="ItemMenuNav__icon"
       :class="{
         'ItemMenuNav__icon--open': open
-      }"
-      aria-hidden="true"></i>
+      }" />
   </ItemMenu>
 </template>
 
@@ -59,7 +60,7 @@ export default {
   .ItemMenuNav__icon {
     transition: all .4s;
     margin-left: $padding-wee;
-    font-size: $font-size-wee;
+    font-size: $font-size-base;
   }
 
   .ItemMenuNav__icon--open {

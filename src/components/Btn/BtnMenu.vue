@@ -4,7 +4,7 @@
       'BtnMenu--open': open
     }"
     @click="handleClick">
-    <i :class="icon" class="BtnMenu__icon"></i>
+    <font-awesome-icon :icon="icon" size="sm" />
     <span class="BtnMenu__content">
       <slot />
     </span>
@@ -13,6 +13,13 @@
     :class="{
       'BtnMenu__iconChevron--open': open
     }" aria-hidden="true"></i>
+
+    <font-awesome-icon v-if="showIcon" 
+      class="BtnMenu__iconChevron"
+      :class="{
+        'BtnMenu__iconChevron--open': open
+      }"
+      icon="angle-down" />
   </div>
 </template>
 
@@ -55,7 +62,7 @@ export default {
 
   .BtnMenu__iconChevron {
     transition: all .4s;
-    font-size: $font-size-wee;
+    font-size: $font-size-base;
   }
 
   .BtnMenu__iconChevron--open {
