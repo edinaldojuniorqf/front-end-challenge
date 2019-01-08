@@ -7,6 +7,7 @@ import VueTheMask from 'vue-the-mask'
 import money from 'v-money'
 import SimpleVueValidation from 'simple-vue-validator'
 import Vue2Filters from 'vue2-filters'
+import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 
 Vue.config.productionTip = false
 
@@ -16,6 +17,7 @@ Vue.use(money, {precision: 2})
 Vue.use(SimpleVueValidation)
 Vue.use(Vue2Filters)
 Vue.component('v-select', vSelect)
+Vue.component('VuePerfectScrollbar', VuePerfectScrollbar)
 
 new Vue({
   store,
