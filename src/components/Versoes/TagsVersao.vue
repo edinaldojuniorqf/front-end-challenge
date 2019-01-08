@@ -1,8 +1,8 @@
 <template>
   <div class="TagsVersao">
     <h3 class="TagsVersao__title">Itens de série</h3>
-    <template v-for="tag in tags">
-      <span class="TagsVersao__label" :key="tag">{{ tag }}</span>
+    <template v-for="(tag, index) in tags">
+      <span class="TagsVersao__label" :key="index">{{ tag }}</span>
     </template>
   </div>
 </template>
