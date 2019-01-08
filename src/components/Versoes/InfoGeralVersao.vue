@@ -2,13 +2,15 @@
   <div class="InfoGeralVersao">
     <h1 class="InfoGeralVersao__title">Informações Gerais</h1>
 
-    <table class="InfoGeralVersao__table">
-      <tr v-for="(i, index) in infoGeral"
-        :key="index">
-        <th>{{ i.key }}</th>
-        <td>{{ i.value }}</td>
-      </tr>
-    </table>
+    <VuePerfectScrollbar class="InfoGeralVersao__scroll" :settings="settings">
+      <table class="InfoGeralVersao__table">
+        <tr v-for="(i, index) in infoGeral"
+          :key="index">
+          <th>{{ i.key }}</th>
+          <td>{{ i.value }}</td>
+        </tr>
+      </table>
+    </VuePerfectScrollbar>
 
   </div>
 </template>
@@ -22,6 +24,15 @@ export default {
       type: Array,
       default () {
         return []
+      }
+    }
+  },
+
+  data () {
+    return {
+      settings: {
+        maxScrollbarLength: 60,
+        wheelSpeed: 0.3
       }
     }
   }
@@ -62,6 +73,11 @@ export default {
         color: $color-primary-light;
       }
     }
+  }
+
+  .InfoGeralVersao__scroll {
+    position: relative;
+    max-height: 266px;
   }
 }
 </style>

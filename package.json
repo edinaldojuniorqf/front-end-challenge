@@ -20,6 +20,7 @@
     "v-money": "^0.8.1",
     "vue": "^2.5.17",
     "vue-carousel": "^0.17.0",
+    "vue-perfect-scrollbar": "^0.1.0",
     "vue-select": "^2.5.1",
     "vue-the-mask": "^0.11.1",
     "vue2-filters": "^0.4.1",

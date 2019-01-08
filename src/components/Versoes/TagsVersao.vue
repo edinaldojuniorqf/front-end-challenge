@@ -1,9 +1,11 @@
 <template>
   <div class="TagsVersao">
     <h3 class="TagsVersao__title">Itens de série</h3>
-    <template v-for="(tag, index) in tags">
-      <span class="TagsVersao__label" :key="index">{{ tag }}</span>
-    </template>
+    <VuePerfectScrollbar class="TagsVersao__scroll" :settings="settings">
+      <template v-for="(tag, index) in tags">
+        <span class="TagsVersao__label" :key="index">{{ tag }}</span>
+      </template>
+    </VuePerfectScrollbar>
   </div>
 </template>
 
@@ -16,6 +18,15 @@ export default {
       type: Array,
       default () {
         return []
+      }
+    }
+  },
+
+  data () {
+    return {
+      settings: {
+        maxScrollbarLength: 60,
+        wheelSpeed: 0.3
       }
     }
   }
@@ -36,6 +47,11 @@ export default {
     padding: 1px $padding-wee;
     background: $color-primary-base;
     margin: 0 3px $margin-wee 0;
+  }
+
+  .TagsVersao__scroll {
+    position: relative;
+    max-height: 33px * 3;
   }
 }
 </style>

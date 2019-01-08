@@ -8,6 +8,7 @@ import money from 'v-money'
 import SimpleVueValidation from 'simple-vue-validator'
 import Vue2Filters from 'vue2-filters'
 import VueCarousel from 'vue-carousel'
+import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -25,6 +26,7 @@ Vue.use(VueCarousel)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('v-select', vSelect)
+Vue.component('VuePerfectScrollbar', VuePerfectScrollbar)
 
 new Vue({
   store,

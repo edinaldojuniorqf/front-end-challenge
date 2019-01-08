@@ -33,10 +33,44 @@ export default [
       {
         key: 'em rev/min',
         value: '2,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
       'Ar condicionado', 'AirBag', 'Desembaçador Traseiro e Dianteiro', 'Ar quente',
+      'Freios ABS', 'Ar condicionado', 'AirBag', 'Desembaçador Traseiro e Dianteiro', 'Ar quente',
+      'Freios ABS', 'Teto Solar', 'Ar condicionado', 'AirBag', 'Desembaçador Traseiro e Dianteiro', 'Ar quente',
+      'Freios ABS', 'Teto Solar', 'AirBag', 'Ar quente',
+      'Freios ABS', 'Teto Solar', 'Ar condicionado', 'AirBag', 'Ar quente',
+      'Freios ABS', 'Teto Solar', 'Ar condicionado', 'AirBag', 'Desembaçador Traseiro e Dianteiro', 'Ar quente',
+      'Freios ABS', 'Teto Solar', 'Ar condicionado', 'AirBag', 'Desembaçador Traseiro e Dianteiro', 'Ar quente',
       'Freios ABS', 'Teto Solar'
     ]
   },
@@ -62,6 +96,34 @@ export default [
       {
         key: 'Potência máxima EEC - Cv',
         value: '240'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
       },
       {
         key: 'em rev/min',
@@ -115,6 +177,34 @@ export default [
       {
         key: 'em rev/min',
         value: '2,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -156,6 +246,34 @@ export default [
       {
         key: 'em rev/min',
         value: '1,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -201,6 +319,34 @@ export default [
       {
         key: 'em rev/min',
         value: '2,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -241,6 +387,34 @@ export default [
       {
         key: 'Torque máximo EEC - Nm (libra-pré)',
         value: '300'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
       },
       {
         key: 'em rev/min',
@@ -290,6 +464,34 @@ export default [
       {
         key: 'em rev/min',
         value: '3,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -335,6 +537,34 @@ export default [
       {
         key: 'em rev/min',
         value: '1,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -380,6 +610,34 @@ export default [
       {
         key: 'em rev/min',
         value: '3,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -425,6 +683,34 @@ export default [
       {
         key: 'em rev/min',
         value: '3,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -470,6 +756,34 @@ export default [
       {
         key: 'em rev/min',
         value: '1,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
@@ -515,6 +829,34 @@ export default [
       {
         key: 'em rev/min',
         value: '3,000-4000'
+      },
+      {
+        key: 'Cilindro/válvulas por cinlindro',
+        value: '4/4'
+      },
+      {
+        key: 'Diâmetro/curso (mm)',
+        value: '97.7/10.91'
+      },
+      {
+        key: 'Cilindrada (cc)',
+        value: '2,998'
+      },
+      {
+        key: 'Potência máxima EEC - Cv',
+        value: '540'
+      },
+      {
+        key: 'em rev/min',
+        value: '5,500'
+      },
+      {
+        key: 'Torque máximo EEC - Nm (libra-pré)',
+        value: '340'
+      },
+      {
+        key: 'em rev/min',
+        value: '2,000-4000'
       }
     ],
     tags: [
