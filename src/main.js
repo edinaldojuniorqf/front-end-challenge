@@ -8,6 +8,11 @@ import money from 'v-money'
 import SimpleVueValidation from 'simple-vue-validator'
 import Vue2Filters from 'vue2-filters'
 import VueCarousel from 'vue-carousel'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faAngleLeft, faAngleRight)
 
 Vue.config.productionTip = false
 
@@ -17,6 +22,8 @@ Vue.use(money, {precision: 2})
 Vue.use(SimpleVueValidation)
 Vue.use(Vue2Filters)
 Vue.use(VueCarousel)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('v-select', vSelect)
 
 new Vue({
