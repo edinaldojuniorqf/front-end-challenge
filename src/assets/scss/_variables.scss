@@ -132,10 +132,6 @@ $time-duration: 						0.25s;
 $grid-gutter-width:           20px !default;
 
 
-// font-awsome
-$fa-font-path: "~font-awesome/fonts";
-
-
 @function double($value) {
 	@return $value * 2
 };
