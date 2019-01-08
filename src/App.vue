@@ -3,6 +3,8 @@
     <SectionHeader />
     <SectionChamadas />
     <SectionVersoes />
+    <SectionCarros />
+    <SectionFooter />
   </div>
 </template>
 
@@ -10,6 +12,8 @@
 import SectionHeader from '@/components/Header/SectionHeader'
 import SectionChamadas from '@/components/Chamadas/SectionChamadas'
 import SectionVersoes from '@/components/Versoes/SectionVersoes'
+import SectionCarros from '@/components/Carros/SectionCarros'
+import SectionFooter from '@/components/Footer/SectionFooter'
 
 export default {
   name: 'app',
@@ -17,7 +21,9 @@ export default {
   components: {
     SectionHeader,
     SectionChamadas,
-    SectionVersoes
+    SectionVersoes,
+    SectionCarros,
+    SectionFooter
   },
 
   mounted () {
