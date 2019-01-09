@@ -10,10 +10,11 @@ import Vue2Filters from 'vue2-filters'
 import VueCarousel from 'vue-carousel'
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleLeft, faAngleRight, faAngleDown, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faAngleLeft, faAngleRight, faAngleDown, faPhone)
+library.add(faAngleDown, faPhone, faFacebookF, faTwitter, faGoogle)
 
 Vue.config.productionTip = false
 

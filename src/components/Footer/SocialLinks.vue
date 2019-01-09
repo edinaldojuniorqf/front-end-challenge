@@ -1,13 +1,14 @@
 <template>
   <div class="SocialLinks">
     <a href="#" class="SocialLinks__link SocialLinks__link--face">
-      <i class="fa fa-facebook"></i>
+      <font-awesome-icon :icon="{prefix: 'fab', iconName: 'facebook-f'}" size="lg" />
     </a>
     <a href="#" class="SocialLinks__link SocialLinks__link--twitter">
       <i class="fa fa-twitter"></i>
+      <font-awesome-icon :icon="{prefix: 'fab', iconName: 'twitter'}" size="lg" />
     </a>
     <a href="#" class="SocialLinks__link SocialLinks__link--google">
-      <i class="fa fa-google-plus"></i>
+      <font-awesome-icon :icon="{prefix: 'fab', iconName: 'google'}" size="lg" />
     </a>
   </div>
 </template>
@@ -24,8 +25,10 @@ export default {
   align-items: flex-start;
 
   .SocialLinks__link {
-    padding: $padding-base;
-    background: rgba(234, 234, 234, 1);
+    padding: $padding-wee;
+    width: 40px;
+    text-align: center;
+    background: rgba(234, 234, 234, .25);
     color: #333;
     margin: 0 2px;
   }
