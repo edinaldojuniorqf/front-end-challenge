@@ -21,10 +21,9 @@ export default {
 
 <style lang="scss">
 .SocialLinks {
-  display: flex;
-  align-items: flex-start;
 
   .SocialLinks__link {
+    display: inline-block;
     padding: $padding-wee;
     width: 40px;
     text-align: center;
