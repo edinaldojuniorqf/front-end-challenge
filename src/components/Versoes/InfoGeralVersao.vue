@@ -2,7 +2,7 @@
   <div class="InfoGeralVersao">
     <h1 class="InfoGeralVersao__title">Informações Gerais</h1>
 
-    <VuePerfectScrollbar class="InfoGeralVersao__scroll" :settings="settings">
+    <div class="InfoGeralVersao__scroll">
       <table class="InfoGeralVersao__table">
         <tr v-for="(i, index) in infoGeral"
           :key="index">
@@ -10,12 +10,14 @@
           <td>{{ i.value }}</td>
         </tr>
       </table>
-    </VuePerfectScrollbar>
+    </div>
 
   </div>
 </template>
 
 <script>
+import PerfectScrollbar from 'perfect-scrollbar'
+
 export default {
   name: 'InfoGeralVersao',
 
@@ -28,13 +30,8 @@ export default {
     }
   },
 
-  data () {
-    return {
-      settings: {
-        maxScrollbarLength: 60,
-        wheelSpeed: 0.3
-      }
-    }
+  mounted () {
+    new PerfectScrollbar('.InfoGeralVersao__scroll')
   }
 }
 </script>

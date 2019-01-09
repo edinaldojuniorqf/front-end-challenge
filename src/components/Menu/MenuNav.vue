@@ -12,7 +12,7 @@
           {{ item.title }}
         </ItemMenuNav>
         
-        <VuePerfectScrollbar class="MenuNav__scroll" :settings="settings">
+        <div class="MenuNav__scroll">
           <template v-for="(itemSub, indexSub) in item.items">
             <template v-if="itemSub.comp">
               <component
@@ -30,7 +30,7 @@
               </ItemMenu>
             </template>  
           </template>
-        </VuePerfectScrollbar>
+        </div>
 
       </MenuToggle>
       <ItemMenuNav v-else
@@ -44,6 +44,7 @@
 <script>
 import MenuToggle from '@/components/Menu/MenuToggle'
 import ItemMenuNav from '@/components/Menu/ItemMenuNav'
+import PerfectScrollbar from 'perfect-scrollbar'
 
 export default {
   name: 'MenuNav',
@@ -71,11 +72,7 @@ export default {
 
   data () {
     return {
-      show: [],
-      settings: {
-        maxScrollbarLength: 60,
-        wheelSpeed: 0.3
-      }
+      show: []
     }
   },
 
@@ -98,6 +95,10 @@ export default {
         this.$forceUpdate() // vue não monitora mudança no array
       })
     }
+  },
+
+  mounted () {
+    new PerfectScrollbar('.MenuNav__scroll')
   }
 }
 </script>
@@ -115,6 +116,48 @@ export default {
   .MenuNav__scroll {
     position: relative;
     max-height: 270px;
+    margin: $margin-wee $margin-wee $margin-wee 0;
+  }
+
+  /*
+  * Scrollbar rail styles
+  */
+  .ps--active-x > .ps__rail-x,
+  .ps--active-y > .ps__rail-y {
+    background-color: #d7d6d7;
+  }
+
+  .ps .ps__rail-x:hover,
+  .ps .ps__rail-y:hover,
+  .ps .ps__rail-x:focus,
+  .ps .ps__rail-y:focus,
+  .ps .ps__rail-x.ps--clicking,
+  .ps .ps__rail-y.ps--clicking {
+    background-color: #d7d6d7;
+    opacity: 1;
+  }
+
+  /*
+  * Scrollbar thumb styles
+  */
+  .ps__thumb-x {
+    background-color: #373435;
+  }
+
+  .ps__thumb-y {
+    background-color: #373435;
+  }
+
+  .ps__rail-x:hover > .ps__thumb-x,
+  .ps__rail-x:focus > .ps__thumb-x,
+  .ps__rail-x.ps--clicking .ps__thumb-x {
+    background-color: #373435;
+  }
+
+  .ps__rail-y:hover > .ps__thumb-y,
+  .ps__rail-y:focus > .ps__thumb-y,
+  .ps__rail-y.ps--clicking .ps__thumb-y {
+    background-color: #373435;
   }
 }
 </style>

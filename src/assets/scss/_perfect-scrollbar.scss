@@ -1,0 +1,74 @@
+/*
+ * Scrollbar rail styles
+ */
+ .ps__rail-x {
+  display: block;
+  opacity: 1;
+  height: 4px;
+}
+
+.ps__rail-y {
+  display: block;
+  opacity: 1;
+  width: 4px;
+}
+
+.ps--active-x > .ps__rail-x,
+.ps--active-y > .ps__rail-y {
+  display: block;
+  background-color: #202020;
+}
+
+.ps:hover > .ps__rail-x,
+.ps:hover > .ps__rail-y,
+.ps--focus > .ps__rail-x,
+.ps--focus > .ps__rail-y,
+.ps--scrolling-x > .ps__rail-x,
+.ps--scrolling-y > .ps__rail-y {
+  opacity: 1;
+}
+
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: #202020;
+  opacity: 1;
+}
+
+/*
+ * Scrollbar thumb styles
+ */
+ .ps__thumb-x {
+  background-color: $color-primary-base;
+  border-radius: 4px;
+  height: 4px;
+  /* there must be 'bottom' for ps__thumb-x */
+  bottom: 0px;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps__thumb-y {
+  background-color: $color-primary-base;
+  border-radius: 4px;
+  width: 4px;
+  /* there must be 'right' for ps__thumb-y */
+  right: 0px;
+}
+
+.ps__rail-x:hover > .ps__thumb-x,
+.ps__rail-x:focus > .ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+  background-color: $color-primary-base;
+  height: 4px;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: $color-primary-base;
+  width: 4px;
+}
