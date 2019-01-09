@@ -4,10 +4,12 @@
       'ItemMenuAccordion--open': open
     }">
     <slot />
-    <i class="ItemMenuAccordion__icon fa fa-chevron-down"
-    :class="{
-      'ItemMenuAccordion__icon--open': open
-    }" aria-hidden="true"></i>
+
+    <font-awesome-icon class="ItemMenuAccordion__icon"
+      :class="{
+        'ItemMenuAccordion__icon--open': open
+      }"
+      icon="angle-down" size="lg" />
 
   </ItemMenu>
 </template>
