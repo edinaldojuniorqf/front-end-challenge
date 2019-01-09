@@ -47,6 +47,7 @@ export default {
     padding: 1px $padding-wee;
     background: $color-primary-base;
     margin: 0 3px $margin-wee 0;
+    font-size: $font-size-small;
   }
 
   .TagsVersao__scroll {
