@@ -2,7 +2,7 @@
   <div class="SectionCarros">
     <div class="container">
       <h3 class="SectionCarros__title">Conheça nossos carros</h3>
-      <CarouselCarros />
+      <CarouselCarros :perPage="perPage" :navigationEnabled="navigationEnabled" />
     </div>
   </div>
 </template>
@@ -15,9 +15,39 @@ export default {
 
   components: {
     CarouselCarros
+  },
+
+  data () {
+    return {
+      perPage: 5,
+      navigationEnabled: false
+    }
+  },
+
+  methods: {
+    setPerPage () {
+      if (window.matchMedia(`(max-width: ${this.$style.md})`).matches) {
+        this.perPage = 3
+        this.navigationEnabled = false
+      } else {
+        this.perPage = 5
+        this.navigationEnabled = true
+      }
+    }
+  },
+
+  mounted () {
+    this.setPerPage()
+
+    window.addEventListener('resize', () => {
+      this.setPerPage()
+    })
   }
 }
 </script>
+
+<style lang="scss" module>
+</style>
 
 <style lang="scss">
 .SectionCarros {

@@ -2,7 +2,7 @@
   <div class="CarouselCarros">
     <carousel
       :per-page="perPage"
-      :navigationEnabled="true"
+      :navigationEnabled="navigationEnabled"
       :navigationClickTargetSize="1"
       navigationNextLabel="&#10095;"
       navigationPrevLabel="&#10094;"
@@ -62,6 +62,11 @@ export default {
     perPage: {
       type: Number,
       default: 5
+    },
+
+    navigationEnabled: {
+      type: Boolean,
+      default: true
     }
   }
 }
