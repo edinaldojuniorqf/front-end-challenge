@@ -1,0 +1,14 @@
+.VueCarousel-slide {
+  text-align: center;
+}
+
+.VueCarousel-dot-container {
+  margin-top: 0 !important;
+}
+
+.VueCarousel-navigation-button {
+  background: rgba(0, 0, 0, .35) !important;
+  color: $color-white !important;
+  padding: 5px 10px !important;
+  font-size: $font-size-small;
+}
