@@ -3,7 +3,7 @@
     <div class="container">
       <HeaderMain />
     </div>
-    <div class="container SectionHeader__container">
+    <div class="container SectionHeaderContent__container">
       <div class="row">
         <div class="d-flex col-md-8 order-md-2">
           <HeaderContent />
@@ -32,6 +32,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.SectionHeaderContent {
+  .SectionHeaderContent__container {
+    margin-top: $margin-big;
+    padding-bottom: $padding-extra;
+  }
+}
 </style>

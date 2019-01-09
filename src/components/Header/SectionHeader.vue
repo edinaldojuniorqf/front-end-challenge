@@ -55,13 +55,6 @@ export default {
   }
 }
 
-.SectionHeader {
-  .SectionHeader__container {
-    margin-top: $margin-big;
-    padding-bottom: $padding-extra;
-  }
-}
-
 .SectionHeader--backgroundImg {
   background: url('../../assets/images/bg-video.png');
   background-size: cover;
