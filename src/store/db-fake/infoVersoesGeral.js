@@ -4,7 +4,7 @@ export default [
       id: 1,
       nome: 'X PLUS MAN',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/etios.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -79,7 +79,7 @@ export default [
       id: 2,
       nome: 'X PLUS MAN',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/corolla.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -217,7 +217,7 @@ export default [
       id: 4,
       nome: 'X 1.5 AT',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/corolla.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -290,7 +290,7 @@ export default [
       id: 5,
       nome: 'X-STD 1.5',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/etios.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -435,7 +435,7 @@ export default [
       id: 7,
       nome: '2.0L 4x2 CVT TOP',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/etios.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -508,7 +508,7 @@ export default [
       id: 8,
       nome: '1.8L DUAL VVT-l 16V',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/corolla.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -654,7 +654,7 @@ export default [
       id: 10,
       nome: 'SR 4x2 2.7 Flex MT',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/hilux.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -727,7 +727,7 @@ export default [
       id: 11,
       nome: 'SR 4x2 2.7 Flex AT',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/hilux.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
@@ -800,7 +800,7 @@ export default [
       id: 12,
       nome: 'SR 4x2 2.7 Turbo Diesel',
     },
-    imgDestaque: 'http://localhost:8080/images/versoes/carro.png',
+    imgDestaque: 'http://localhost:8080/images/versoes/hilux.png',
     infoGeral: [
       {
         key: 'Cilindro/válvulas por cinlindro',
