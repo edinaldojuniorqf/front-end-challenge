@@ -72,12 +72,28 @@ export default {
   color-primary-base: $color-primary-base;
   color-gray: $color-gray;
 }
+</style>
 
+<style lang="scss">
 .CarouselCarros {
 
   .CarouselCarros__title {
     font-weight: $font-weight-normal;
     $color: $color-gray-darker;
   }
+
+  .VueCarousel {
+    .VueCarousel-wrapper {
+      &:hover {
+        .VueCarousel-slide {
+          opacity: .5;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
 }
 </style>
