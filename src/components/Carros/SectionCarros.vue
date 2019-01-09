@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import CarouselCarros from '@/components/Carros/CarouselCarros'
+import CarouselCarros from '@/components/Carros/CarouselCarros.container'
 
 export default {
   name: 'SectionCarros',

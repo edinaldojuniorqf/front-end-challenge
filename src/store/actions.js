@@ -3,7 +3,8 @@ import menuTelefones from './db-fake/menuTelefones'
 import veiculos from './db-fake/veiculos'
 import versoes from './db-fake/versoes'
 import infoVersoesDestaques from './db-fake/infoVersoesDestaques'
-import infoVersoesGeral from './db-fake/infoVersoesGeral';
+import infoVersoesGeral from './db-fake/infoVersoesGeral'
+import veiculosCarousel from './db-fake/veiculosCarousel'
 
 export default {
   setMenu ({commit}) {
@@ -57,5 +58,9 @@ export default {
     if (infoVersaoGeral) {
       commit('SET_INFO_VERSAO_GERAL', infoVersaoGeral)
     }
+  },
+
+  setVeiculosCarousel ({commit}) {
+    commit('SET_VEICULOS_CAROUSEL', veiculosCarousel)
   }
 }

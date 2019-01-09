@@ -25,5 +25,9 @@ export default {
 
   SET_INFO_VERSAO_GERAL (state, infoGeral) {
     state.infoVersaoGeral = infoGeral
+  },
+
+  SET_VEICULOS_CAROUSEL (state, veiculos) {
+    state.veiculosCarousel = veiculos
   }
 }

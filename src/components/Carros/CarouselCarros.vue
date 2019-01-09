@@ -9,47 +9,14 @@
       :paginationActiveColor="$style['color-primary-base']"
       :paginationColor="$style['color-gray']"
       :paginationSize="10">
-      <slide>
-        <img class="img-fluid" src="http://localhost:8080/images/carros/carro-classe-a.png" alt="Classe A">
-        <h5 class="CarouselCarros__title">
-          Classe A
-        </h5>
-      </slide>
-
-      <slide>
-        <img class="img-fluid" src="http://localhost:8080/images/carros/carro-classe-a.png" alt="Classe A">
-        <h5 class="CarouselCarros__title">
-          Classe A
-        </h5>
-      </slide>
-
-      <slide>
-        <img class="img-fluid" src="http://localhost:8080/images/carros/carro-classe-a.png" alt="Classe A">
-        <h5 class="CarouselCarros__title">
-          Classe A
-        </h5>
-      </slide>
-
-      <slide>
-        <img class="img-fluid" src="http://localhost:8080/images/carros/carro-classe-a.png" alt="Classe A">
-        <h5 class="CarouselCarros__title">
-          Classe A
-        </h5>
-      </slide>
-
-      <slide>
-        <img class="img-fluid" src="http://localhost:8080/images/carros/carro-classe-a.png" alt="Classe A">
-        <h5 class="CarouselCarros__title">
-          Classe A
-        </h5>
-      </slide>
-
-      <slide>
-        <img class="img-fluid" src="http://localhost:8080/images/carros/carro-classe-a.png" alt="Classe A">
-        <h5 class="CarouselCarros__title">
-          Classe A
-        </h5>
-      </slide>
+      <template v-for="(slide, index) in slides">
+        <slide :key="index">
+          <img class="img-fluid" :src="slide.img" :alt="slide.title">
+          <h5 class="CarouselCarros__title">
+            {{ slide.title }}
+          </h5>
+        </slide>
+      </template>
     </carousel>
   </div>
 </template>
@@ -67,7 +34,18 @@ export default {
     navigationEnabled: {
       type: Boolean,
       default: true
+    },
+
+    slides: {
+      type: Array,
+      default () {
+        return []
+      }
     }
+  },
+
+  created () {
+    this.$emit('setSlides')
   }
 }
 </script>
