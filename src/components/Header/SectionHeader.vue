@@ -49,12 +49,6 @@ export default {
 </script>
 
 <style lang="scss" module>
-:export {
-  @each $breakpoint, $size in $grid-breakpoints {
-    #{$breakpoint}: $size;
-  }
-}
-
 .SectionHeader--backgroundImg {
   background: url('../../assets/images/bg-video.png');
   background-size: cover;
