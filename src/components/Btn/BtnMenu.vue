@@ -4,15 +4,10 @@
       'BtnMenu--open': open
     }"
     @click="handleClick">
-    <font-awesome-icon :icon="icon" size="sm" />
+    <font-awesome-icon :icon="icon" size="sm" :flip="iconFlip" />
     <span class="BtnMenu__content">
       <slot />
     </span>
-    
-    <i v-if="showIcon" class="BtnMenu__iconChevron fa fa-chevron-down"
-    :class="{
-      'BtnMenu__iconChevron--open': open
-    }" aria-hidden="true"></i>
 
     <font-awesome-icon v-if="showIcon" 
       class="BtnMenu__iconChevron"
@@ -29,6 +24,10 @@ export default {
 
   props: {
     icon: {
+      type: String
+    },
+
+    iconFlip: {
       type: String
     },
 

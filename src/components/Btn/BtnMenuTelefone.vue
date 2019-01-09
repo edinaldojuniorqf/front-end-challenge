@@ -3,6 +3,7 @@
     <BtnMenu 
       class="BtnMenu--border"
       icon="phone"
+      iconFlip="horizontal"
       :showIcon="true"
       :open="open"
       @click="handleClick">
