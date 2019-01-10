@@ -4,7 +4,7 @@ export default [
     items: [
       {
         title: 'ETIOS HATCH 2017',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_etiooooss.png',
+        srcImg: 'images/menu/model_thumb_etiooooss.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 1
@@ -12,7 +12,7 @@ export default [
       },
       {
         title: 'ETIOS SEDÃ 2017',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Sedan-X-1.5-Manual.png',
+        srcImg: 'images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Sedan-X-1.5-Manual.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 2
@@ -20,7 +20,7 @@ export default [
       },
       {
         title: 'ETIOS CROSS 2017',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Cross-Manual.png',
+        srcImg: 'images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Cross-Manual.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 3
@@ -28,7 +28,7 @@ export default [
       },
       {
         title: 'COROLLA 2016',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_corollaaaa.png',
+        srcImg: 'images/menu/model_thumb_corollaaaa.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 4
@@ -36,7 +36,7 @@ export default [
       },
       {
         title: 'HILUX CD DIESEL',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_hiluuuuxxx.png',
+        srcImg: 'images/menu/model_thumb_hiluuuuxxx.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 5
@@ -44,7 +44,7 @@ export default [
       },
       {
         title: 'ETIOS HATCH 2017',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_etiooooss.png',
+        srcImg: 'images/menu/model_thumb_etiooooss.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 1
@@ -52,7 +52,7 @@ export default [
       },
       {
         title: 'ETIOS SEDÃ 2017',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Sedan-X-1.5-Manual.png',
+        srcImg: 'images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Sedan-X-1.5-Manual.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 2
@@ -60,7 +60,7 @@ export default [
       },
       {
         title: 'ETIOS CROSS 2017',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Cross-Manual.png',
+        srcImg: 'images/menu/model_thumb_Comprar-Novo-Toyota-Etios-Cross-Manual.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 3
@@ -68,7 +68,7 @@ export default [
       },
       {
         title: 'COROLLA 2016',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_corollaaaa.png',
+        srcImg: 'images/menu/model_thumb_corollaaaa.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 4
@@ -76,7 +76,7 @@ export default [
       },
       {
         title: 'HILUX CD DIESEL',
-        srcImg: 'http://localhost:8080/images/menu/model_thumb_hiluuuuxxx.png',
+        srcImg: 'images/menu/model_thumb_hiluuuuxxx.png',
         comp: 'ItemMenuVeiculo',
         veiculo: {
           id: 5
