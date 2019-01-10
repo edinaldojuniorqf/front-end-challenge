@@ -78,4 +78,12 @@ export default {
 .ItemMenuNav--open {
   transition: color .4s;
 }
+
+.ItemMenuNav--submenu {
+  color: $color-gray-darker;
+
+  &:hover {
+    color: $color-gray-darker;
+  }
+}
 </style>

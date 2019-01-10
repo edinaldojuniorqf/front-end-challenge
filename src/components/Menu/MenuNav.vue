@@ -22,12 +22,13 @@
                 @close="handleClose(index)" />
             </template>
             <template v-else>
-              <ItemMenu
+              <ItemMenuNav
                 v-bind="itemSub"
                 :href="itemSub.href"
-                :key="indexSub">
+                :key="indexSub"
+                class="ItemMenuNav--submenu">
                 {{ itemSub.title }}
-              </ItemMenu>
+              </ItemMenuNav>
             </template>  
           </template>
         </div>
