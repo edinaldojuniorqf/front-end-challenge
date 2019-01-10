@@ -34,7 +34,10 @@ export default {
   },
 
   mounted () {
-    this.ps = new PerfectScrollbar('.TagsVersao__scroll')
+    this.ps = new PerfectScrollbar('.TagsVersao__scroll', {
+      wheelSpeed: 0.3,
+      maxScrollbarLength: 60
+    })
   }
 }
 </script>

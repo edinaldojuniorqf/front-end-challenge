@@ -42,7 +42,10 @@ export default {
   },
 
   mounted () {
-    this.ps = new PerfectScrollbar('.InfoGeralVersao__scroll')
+    this.ps = new PerfectScrollbar('.InfoGeralVersao__scroll', {
+      wheelSpeed: 0.3,
+      maxScrollbarLength: 60
+    })
   }
 }
 </script>
