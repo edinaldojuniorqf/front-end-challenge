@@ -30,8 +30,19 @@ export default {
     }
   },
 
+  watch: {
+    infoGeral: {
+      handler () {
+        this.$nextTick(() => {
+          this.ps.update()
+        })
+      },
+      deep: true
+    }
+  },
+
   mounted () {
-    new PerfectScrollbar('.InfoGeralVersao__scroll')
+    this.ps = new PerfectScrollbar('.InfoGeralVersao__scroll')
   }
 }
 </script>

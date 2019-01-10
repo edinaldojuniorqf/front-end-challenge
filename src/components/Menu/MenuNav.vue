@@ -76,6 +76,16 @@ export default {
     }
   },
 
+  watch: {
+    items: {
+      handler (newValue, oldValue) {
+        console.log('items', oldValue)
+        console.log('items', newValue)
+      },
+      deep: true
+    }
+  },
+
   created () {
     this.$emit('setItems')
   },
@@ -87,18 +97,20 @@ export default {
 
     handleBtnMenuToggleClick (index) {
       this.show[index] = !this.show[index]
+      this.$forceUpdate()
+      this.$nextTick(() => {
+        this.ps.update()
+      })
     },
 
     handleClose (index) {
-      this.$nextTick(() => {
-        this.show[index] = false
-        this.$forceUpdate() // vue não monitora mudança no array
-      })
+      this.show[index] = false
+      this.$forceUpdate() // vue não monitora mudança no array
     }
   },
 
   mounted () {
-    new PerfectScrollbar('.MenuNav__scroll')
+    this.ps = new PerfectScrollbar('.MenuNav__scroll')
   }
 }
 </script>

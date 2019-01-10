@@ -5,7 +5,8 @@
       'ItemMenuNav--open': open,
       'ItemMenu--link': showIcon
     }"
-    :href="href" :title="title">
+    :href="href" :title="title"
+    @click="handleClick">
     <slot />
     <font-awesome-icon 
       v-if="showIcon" 
@@ -44,6 +45,12 @@ export default {
 
     title: {
       type: String
+    }
+  },
+
+  methods: {
+    handleClick () {
+      this.$emit('click')
     }
   }
 }

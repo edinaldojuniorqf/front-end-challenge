@@ -24,8 +24,17 @@ export default {
     }
   },
 
+  watch: {
+    tags: {
+      handler () {
+        this.$nextTick(() => this.ps.update())
+      },
+      deep: true
+    }
+  },
+
   mounted () {
-    new PerfectScrollbar('.TagsVersao__scroll')
+    this.ps = new PerfectScrollbar('.TagsVersao__scroll')
   }
 }
 </script>
