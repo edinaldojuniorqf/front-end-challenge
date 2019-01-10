@@ -130,7 +130,7 @@ export default {
 
   .MenuNav__scroll {
     position: relative;
-    max-height: 270px;
+    max-height: 260px;
     margin: $margin-wee $margin-wee $margin-wee 0;
   }
 
